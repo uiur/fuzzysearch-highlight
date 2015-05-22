@@ -1,0 +1,22 @@
+{
+  "name": "fuzzysearch-highlight",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiureo/fuzzysearch-highlight.git"
+  },
+  "author": "Kazato Sugimoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uiureo/fuzzysearch-highlight/issues"
+  },
+  "homepage": "https://github.com/uiureo/fuzzysearch-highlight",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}
