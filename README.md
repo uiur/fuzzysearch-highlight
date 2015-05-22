@@ -1,4 +1,5 @@
 # fuzzysearch-highlight
+[![Build Status](https://travis-ci.org/uiureo/fuzzysearch-highlight.svg?branch=master)](https://travis-ci.org/uiureo/fuzzysearch-highlight)
 
 ```js
 var highlight = require('fuzzysearch-highlight')
