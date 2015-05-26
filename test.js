@@ -13,6 +13,12 @@ test(function (t) {
   )
 
   t.equal(
+    highlight('zzz', 'The quick brown fox'),
+    null,
+    'it returns null if unmatched'
+  )
+
+  t.equal(
     highlight('quick', 'The quick brown fox', { tag: 'em' }),
     'The <em>quick</em> brown fox'
   )
