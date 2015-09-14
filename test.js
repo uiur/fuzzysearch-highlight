@@ -12,6 +12,8 @@ test(function (t) {
     'The <strong>quick</strong> brown fox'
   )
 
+  t.is(highlight('fox', 'fox'), '<strong>fox</strong>')
+
   t.is(
     highlight('zzz', 'The quick brown fox'),
     null,
