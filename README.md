@@ -10,3 +10,6 @@ highlight('tqb', 'The quick brown fox')
 highlight('quick', 'The quick brown fox', { tag: 'em' }),
 //=> 'The <em>quick</em> brown fox'
 ```
+
+## License
+ISC
