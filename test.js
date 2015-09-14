@@ -1,7 +1,7 @@
 var test = require('ava')
 var highlight = require('./index.js')
 
-test(function (t) {
+test('match', function (t) {
   t.is(
     highlight('tqb', 'The quick brown fox'),
     '<strong>T</strong>he <strong>q</strong>uick <strong>b</strong>rown fox'
@@ -13,13 +13,17 @@ test(function (t) {
   )
 
   t.is(highlight('fox', 'fox'), '<strong>fox</strong>')
+  t.is(highlight('ox', 'quick fox'), 'quick f<strong>ox</strong>')
 
-  t.is(
-    highlight('zzz', 'The quick brown fox'),
-    null,
-    'it returns null if unmatched'
-  )
+  t.end()
+})
 
+test('not match', function (t) {
+  t.is(highlight('zzz', 'The quick brown fox'), null)
+  t.end()
+})
+
+test('specify tag', function (t) {
   t.is(
     highlight('quick', 'The quick brown fox', { tag: 'em' }),
     'The <em>quick</em> brown fox'
