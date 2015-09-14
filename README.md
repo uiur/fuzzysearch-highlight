@@ -1,6 +1,10 @@
 # fuzzysearch-highlight
 [![Build Status](https://travis-ci.org/uiureo/fuzzysearch-highlight.svg?branch=master)](https://travis-ci.org/uiureo/fuzzysearch-highlight)
 
+Highlight fuzzy matched text with html.
+
+This module is intended to be used with a module like  [fuzzysearch](https://github.com/bevacqua/fuzzysearch).
+
 ```js
 var highlight = require('fuzzysearch-highlight')
 
