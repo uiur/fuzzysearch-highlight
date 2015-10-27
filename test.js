@@ -1,7 +1,7 @@
 var test = require('ava')
 var highlight = require('./index.js')
 
-test('match', function (t) {
+test('match', (t) => {
   t.is(
     highlight('tqb', 'The quick brown fox'),
     '<strong>T</strong>he <strong>q</strong>uick <strong>b</strong>rown fox'
@@ -18,12 +18,21 @@ test('match', function (t) {
   t.end()
 })
 
-test('not match', function (t) {
+test('query is uppercase', (t) => {
+  t.is(
+    highlight('TQB', 'The quick brown fox'),
+    '<strong>T</strong>he <strong>q</strong>uick <strong>b</strong>rown fox'
+  )
+
+  t.end()
+})
+
+test('not match', (t) => {
   t.is(highlight('zzz', 'The quick brown fox'), null)
   t.end()
 })
 
-test('specify tag', function (t) {
+test('specify tag', (t) => {
   t.is(
     highlight('quick', 'The quick brown fox', { tag: 'em' }),
     'The <em>quick</em> brown fox'

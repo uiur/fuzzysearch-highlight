@@ -5,7 +5,7 @@ module.exports = function highlight (query, text, opts) {
     return text
   }
 
-  var offset = text.toLowerCase().indexOf(query[0])
+  var offset = text.toLowerCase().indexOf(query[0].toLowerCase())
   if (offset === -1) return null
 
   var last = 0
