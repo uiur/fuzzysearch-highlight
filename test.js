@@ -40,3 +40,8 @@ test('specify tag', (t) => {
 
   t.end()
 })
+
+test('query is too long', (t) => {
+  t.is(highlight('brown', 'brow'), null)
+  t.end()
+})
