@@ -21,5 +21,5 @@ module.exports = function highlight (query, text, opts) {
   var match = '<' + opts.tag + '>' + text.slice(offset, offset + last + 1) + '</' + opts.tag + '>'
   var after = highlight(query.slice(last + 1), text.slice(offset + last + 1), opts)
 
-  return before + match + after
+  return after === null ? null : before + match + after
 }
