@@ -1,6 +1,6 @@
 {
   "name": "fuzzysearch-highlight",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Highlight fuzzy matched text",
   "main": "index.js",
   "scripts": {
